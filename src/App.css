@@ -1,0 +1,110 @@
+/* css for each componant */
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #0599;
+  height: 5em;
+  padding: 1em;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.App-paragraph {
+    text-align: center;
+}
+
+.App-integratedParagraph {
+    padding-left: 1em;
+    text-align: center;
+    display: inline-block
+}
+
+.App-button {
+    padding:1em;
+    text-align: center;
+    display: inline-block
+}
+
+.App-dropdown {
+    padding:1em;
+    text-align: center;
+    display: inline-block
+}
+
+
+grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 2em;
+  grid-gap: 3em;
+}
+
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    padding:1em;
+
+    position: absolute;
+    top: 0em;
+    right: 0em;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 1.2em;
+    height: 0.2em;
+    background-color: #333;
+    margin: 0.2em 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.App-Forward {
+    position: absolute;
+    bottom:1em;
+    left:1em;
+    padding: 1em;
+}
+
+.App-Backward {
+    position: absolute;
+    bottom:1em;
+    right:1em;
+    padding: 1em;
+}

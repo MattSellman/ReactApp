@@ -1,0 +1,68 @@
+Login screen for app page:
+
+import React, { Component } from 'react';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+import logo from './logo.svg';
+import './App.css';
+import Loginscreen from './Loginscreen'
+
+// Needed for onTouchTap
+// http://stackoverflow.com/a/34015469/988941
+injectTapEventPlugin();
+
+class App extends Component {
+  constructor(props){
+    super(props);
+    this.state={
+      loginPage:[],
+      uploadScreen:[]
+    }
+  }
+    
+  componentWillMount(){
+    var loginPage =[];
+      
+    if(response.data.code == 200){
+    console.log("Login successfull");
+    var uploadScreen=[];
+    uploadScreen.push(<UploadScreen appContext={self.props.appContext})
+    self.props.appContext.setState({loginPage:[],uploadScreen:uploadScreen})
+    }
+      
+    loginPage.push(<Loginscreen parentContext={this}/>
+                  );
+    this.setState({
+                  loginPage:loginPage
+                    })
+  }
+  render() {
+    return (
+      <div className="App">
+        
+         <header className="App-header">
+          <h1 className="App-title">Welcome to TravelApp</h1>
+        </header>
+        
+        {this.state.loginPage}
+        {this.state.uploadScreen}
+      </div>
+    );
+  }
+
+export default App;
+
+
+      /*
+            //<img src={logo} className="App-logo" alt="logo" />
+
+      */
+
+
+//successful creation - how can we edit this to match what we need?
+    //- we need: 
+    /*from date to date (text input)
+      from time to time (text input) - int?
+      city - dropdown box (source: http://www.material-ui.com/#/components/dropdown-menu)
+                    </div>
+        
+        <div>

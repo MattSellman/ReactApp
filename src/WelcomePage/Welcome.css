@@ -1,0 +1,40 @@
+/* welcome.css */
+
+.Welcome {
+  text-align: center;
+}
+
+.Welcome-header {
+  background-color: #0599;
+  height: 5em;
+  padding: 1em;
+  color: white;
+}
+
+.Welcome-title {
+  font-size: 1.5em;
+}
+
+.Welcome-paragraph {
+    padding-left: 1em;
+    text-align: center;
+}
+
+.Welcome-login {
+    padding:1em;
+    text-align: center;
+    display: inline-block;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+.Welcome-button {
+    padding:1em;
+    text-align: center;
+    display: inline-block;
+    margin-left: 20%;
+    margin-right: 40%;
+}
+
+
+

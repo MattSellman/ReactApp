@@ -1,0 +1,120 @@
+/* planning.css */
+
+.Plan {
+  text-align: center;
+}
+
+.Plan-header {
+  background-color: #0599;
+  height: 5em;
+  padding: 1em;
+  color: white;
+}
+
+.Plan-title {
+  font-size: 1.5em;
+}
+
+.Plan-integratedParagraph {
+    padding-left: 1em;
+    text-align: center;
+    display: inline-block
+}
+
+.Plan-button {
+    padding:1em;
+    text-align: center;
+    display: inline-block
+}
+
+.Plan-paragraph {
+    text-align: center;
+}
+.Plan-Forward {
+    position: absolute;
+    bottom:1em;
+    left:1em;
+    padding: 1em;
+}
+
+.Plan-Backward {
+    position: absolute;
+    bottom:1em;
+    right:1em;
+    padding: 1em;
+}
+
+MapContainer {
+    padding: 1em;
+}
+
+
+
+
+
+/*
+button for menu:
+*/
+
+#roundButton {
+  position:absolute;
+  top: 1em;
+  right: 1em;
+    
+  background-color: #96D9FF;
+  margin-bottom: 1em;
+  width: 1em;
+  height: 3em;
+  border-radius: 50%;
+  border: 10px solid #0065A6;
+  outline: none;
+  transition: all .2s cubic-bezier(0, 1.26, .8, 1.28);
+}
+ 
+#roundButton:hover {
+  background-color: #96D9FF;
+  cursor: pointer;
+  border-color: #003557;
+  transform: scale(1.2, 1.2);
+}
+ 
+#roundButton:active {
+  border-color: #003557;
+  background-color: #FFF;
+}
+
+/*
+menu details:
+*/
+
+#flyoutMenu {
+  width: 30vw;
+  height: 100vh;
+  background-color: #0065A6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform .3s
+              cubic-bezier(0, .52, 0, 1);
+  overflow: scroll;
+  z-index: 1000;
+}
+ 
+#flyoutMenu.hide {
+  transform: translate3d(-100vw, 0, 0);
+}
+ 
+#flyoutMenu.show {
+  transform: translate3d(0vw, 0, 0);
+  overflow: hidden;
+}
+ 
+#flyoutMenu h2 a {
+  color: #333;
+  margin-left: 15px;
+  text-decoration: none;
+}
+ 
+#flyoutMenu h2 a:hover {
+  text-decoration: underline;
+}
